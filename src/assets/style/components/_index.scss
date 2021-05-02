@@ -1,0 +1,28 @@
+@import "menu";
+@import "pages";
+@import "partials";
+@import "props";
+@import "views";
+@import "globalFormStyle";
+
+.main-content {
+  text-align: left;
+  position: relative;;
+  height: 100vh;
+  padding: 4em 0 4em 0;
+  width: calc(100vw - 15px); /*error of 12px */
+  top: 50px;
+}
+
+.main-content-short {
+  padding: 4em 0 4em 0;
+  margin-left: 12vw;
+  width: calc(100vw - 12vw - 15px);
+  transition: 0.355s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+.main-content-long {
+  margin-left: 0;
+  transition: 0.355s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+}

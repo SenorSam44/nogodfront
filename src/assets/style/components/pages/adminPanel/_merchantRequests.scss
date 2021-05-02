@@ -1,0 +1,19 @@
+.merchant-request {
+  h1{
+    text-align: center;
+    margin: 0 0 5% 0;
+  }
+  .decision-message{
+    background: $session-message-background;
+    color: $session-message-color;
+    max-width: 50%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .mrp-parent{
+    max-width: 50%;
+    margin: auto;
+  }
+}

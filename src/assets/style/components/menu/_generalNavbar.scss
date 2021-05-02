@@ -1,0 +1,67 @@
+#general-navbar {
+  background: $navbar-background;
+  color: red;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+
+  .top-nav {
+    background: $top-navbar-background;
+    color: $top-navbar-text;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 0.25em white;
+    font-size: 14px;
+    padding: 2px;
+
+    a {
+      text-decoration: none;
+      color: $top-navbar-text;
+    }
+  }
+
+  .navbar {
+    .nav-right {
+      .search-button {
+        .nav-link {
+          //display: flex;
+          //flex-direction: row-reverse;
+        }
+      }
+
+      .search-input {
+        max-height: 40px;
+        padding: 0 10px;
+        margin: 0 15px;
+
+        .nav-link {
+          input{
+            width: 28px;
+            height: 25px;
+            opacity:0;
+            cursor: pointer;
+            transition: opacity 0.5s ease, width 1s ease;
+            -webkit-appearance:none
+          }
+        }
+
+      }
+
+      button {
+        @extend .primary-small-button;
+      }
+
+      .nav-link {
+        @extend .primary-small-link;
+
+      }
+    }
+  }
+
+  .admin {
+    background: #2bb6d9;
+  }
+}

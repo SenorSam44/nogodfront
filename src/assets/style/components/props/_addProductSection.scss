@@ -1,0 +1,48 @@
+.standard-preview-image-style {
+  width: 9vw;
+  height: 6vw;
+  background: $white-gray;
+}
+
+.add-product-section {
+  @extend .primary-form;
+  margin: auto;
+
+  h1 {
+    text-align: center;
+    margin-right: 5%;
+  }
+
+  .add-product-form {
+    @extend .main-form;
+    margin-bottom: 100px;
+    .image-preview {
+      display: flex;
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding-left: calc((100% - 9vw * 3 + 5px * 2) / 3 - 5px);
+      //justify-content: center;
+      .image-button-template {
+        margin: 5px;
+        border: 2px solid $black;
+
+        .previewed-img {
+          @extend .standard-preview-image-style;
+        }
+      }
+      .add-image-button {
+        @extend .standard-preview-image-style;
+        margin: 5px;
+      }
+    }
+
+    .discount-field{
+      justify-content: space-between;
+      .price-after-discount{
+        min-width: 30px;
+        margin-left: 20px;
+        text-align: left;
+      }
+    }
+  }
+}

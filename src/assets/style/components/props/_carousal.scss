@@ -1,0 +1,47 @@
+.slick-slider {
+  margin: auto;
+  width: $carousel-width;
+
+  .slick-prev, .slick-next {
+    color: $black;
+    height: 2rem;
+    width: 2rem;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  .owl-carousel-inner {
+    width: 9*2rem;
+    margin: auto;
+
+    .carousel-inner-top {
+      img {
+        height: 6*2rem;
+        width: 9*2rem;
+      }
+    }
+
+    .carousel-inner-bottom {
+      .inner-name {
+        margin-top: 15px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      .inner-description {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+  }
+
+  .owl-stage {
+    transition: all 0.25s cubic-bezier(0.25, 0.86, 0.48, 1.12) 0s !important;
+  }
+}

@@ -1,0 +1,19 @@
+.business-with-us{
+  h1{
+    padding-left: 5%;
+  }
+
+  .account-types{
+    .business-options{
+      width: 40%;
+      margin: auto;
+      //padding: 2% 0 2% 5%;
+
+      .business-description{
+        height: 5vh;
+        background: $session-message-background;
+        color: $session-message-color;
+      }
+    }
+  }
+}

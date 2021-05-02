@@ -1,0 +1,112 @@
+/** Global classes to extend **/
+.primary-small-button {
+  border: none;
+  border-radius: 10px;
+  padding: 7px 20px;
+  margin: 10px;
+  color: $navbar-text1;
+  background: $button-background;
+}
+
+.primary-small-link {
+  color: $white;
+}
+
+.primary-list {
+  background: $white;
+  color: $text-color2;
+}
+
+.primary-form {
+  margin: 5% auto auto auto;
+  padding-right: 10%;
+  width: 35vw;
+  justify-self: center;
+
+  .social-buttons {
+    margin-bottom: 5%;
+    button{
+      width: 80%;
+      margin: 10px auto;
+      display: flex;
+      padding: 0;
+    }
+    span{
+      width: 80%;
+      margin-top: 4px;
+    }
+    .icon-wrapper{
+      height: 100%;
+      padding: 5px 8px;
+    }
+
+    .facebook-button{
+        background: $facebook-btn-background;
+      &:hover{
+        background: $facebook-btn-deeper-background;
+      }
+      .icon-wrapper{
+        background: $facebook-btn-deeper-background;
+      }
+    }
+
+    .google-button{
+      background: $google-btn-background;
+      &:hover{
+        background: $google-btn-deeper-background;
+      }
+      .icon-wrapper{
+        background: $google-btn-deeper-background;
+      }
+    }
+  }
+
+  .horizontal-or-line {
+    display: flex;
+    color: $light-gray;
+    align-items: center;
+    //justify-content: space-between;
+    hr{
+      border-top: 1px solid $light-gray;
+      width: 100%;
+    }
+    span{
+        text-align: center;
+    }
+  }
+
+  .main-form {
+    input, select {
+      border: none;
+      border-bottom: 1px solid $gray;
+      border-radius: 0;
+      transition: border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $light-gray;
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $light-gray;
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $light-gray;
+      }
+
+      &:focus {
+        border: none;
+        border-bottom: 1px solid $bluish-gray;
+        box-shadow: 2px 2px 10px 2px $bluish-gray;
+      }
+    }
+
+    .no-focus {
+      input {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
